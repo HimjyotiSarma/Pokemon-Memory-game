@@ -1,0 +1,36 @@
+.scoreCard {
+  display: flex;
+  max-width: 1024px;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 20%;
+  max-height: 150px;
+
+  .poke_logo {
+    margin-right: auto;
+    max-height: fit-content;
+    max-width: 200px;
+  }
+  .score_record {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  @media only screen and (max-width: 600px) {
+    .score_record {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .scoreCard {
+    flex-direction: column;
+  }
+  .poke_logo {
+    margin: 0 auto;
+  }
+}

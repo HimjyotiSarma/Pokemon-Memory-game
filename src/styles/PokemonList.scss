@@ -1,0 +1,32 @@
+.pokemonGrid {
+  display: grid;
+  grid-template-columns:
+    minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)
+    minmax(100px, 1fr) minmax(100px, 1fr);
+
+  gap: 1rem;
+}
+.pokemonCardSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .pokemonGrid {
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(
+        100px,
+        1fr
+      );
+  }
+  .pokemonCardSection {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pokemonGrid {
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+  }
+}
